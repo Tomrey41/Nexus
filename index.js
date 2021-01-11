@@ -53,7 +53,7 @@ Client.on("message", async message => {
         if(message.member.voice.channel){
             let args = message.content.split(" ");
 
-            if(args[1] == undefined || !args[1].startsWith("https://www.youtube.com/watch?v=")){
+            if(args[1] == undefined || !args[1].startsWith("https://")){
                 message.reply("Lien de la vidéo non ou mal mentionné.");
             }
             else {
